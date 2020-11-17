@@ -1,4 +1,18 @@
-export const createTBody = (listItems = [], callback )=>{
+import {get} from '../apiXHR.js';
+import {crearSpinner,quitarSpinner} from '../helpers.js';
+import {addItems} from './listItem.js';
+//Recibe una funcion que va a tener disponible la ID en el click
+export const createTBody = async(callback,list = null)=>{
+    
+    let listItems;
+    if(list){
+        listItems = list;
+    }else{
+        crearSpinner();
+        listItems = await get();
+        quitarSpinner();
+    }
+    addItems(listItems);
     const table = document.getElementById('myTable');
     if(table.childElementCount > 1){
         table.removeChild( table.lastChild );
@@ -7,21 +21,15 @@ export const createTBody = (listItems = [], callback )=>{
     listItems.forEach( element =>{
         const tr = document.createElement('tr');
         for (const key in element) {
-            if( key === 'id' ){
-                tr.addEventListener( 'click', (e)=>{
-                    callback(element[key]);
-                });
-                continue;
-            }
             const td = document.createElement('td');
             const textNode = document.createTextNode(element[key]);
             td.appendChild(textNode);
             tr.appendChild(td);
             
         }
-        /* tr.addEventListener( 'click', (e)=>{
+        tr.addEventListener( 'click', (e)=>{
             callback(e.target.parentElement.firstChild.textContent);
-        }); */
+        });
         tbody.appendChild(tr);
     });
     table.appendChild(tbody);

@@ -1,5 +1,5 @@
 
-const get = ()=>{
+const get = (id = "")=>{
     return new Promise( (res,rej)=>{
         const xhr = new XMLHttpRequest();
         xhr.addEventListener('readystatechange', ()=>{
@@ -12,7 +12,7 @@ const get = ()=>{
                 }
             }
         });
-        xhr.open('GET', 'http://localhost:3000/personas' );
+        xhr.open('GET', 'http://localhost:3000/automoviles/' + id);
         xhr.send();
         });
 }
@@ -30,7 +30,7 @@ const post = (data)=>{
                 }
             }
         });
-        xhr.open('POST', 'http://localhost:3000/personas',true );
+        xhr.open('POST', 'http://localhost:3000/automoviles',true );
         xhr.setRequestHeader('Content-type','application/json');
         xhr.send(JSON.stringify(data));
     });
@@ -49,7 +49,7 @@ const put = (data,id)=>{
             }
         }
     });
-    xhr.open('PUT', 'http://localhost:3000/personas/' + id,true );
+    xhr.open('PUT', 'http://localhost:3000/automoviles/' + id,true );
     xhr.setRequestHeader('Content-type','application/json');
     xhr.send(JSON.stringify(data));
 }
@@ -67,7 +67,7 @@ const remove = (id)=>{
             }
         }
     });
-    xhr.open('DELETE', 'http://localhost:3000/personas/' + id,true );
+    xhr.open('DELETE', 'http://localhost:3000/automoviles/' + id,true );
     xhr.setRequestHeader('Content-type','application/json');
     xhr.send();
 }

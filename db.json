@@ -1,130 +1,24 @@
 {
-  "personas": [
+  "automoviles": [
     {
       "id": 1,
-      "nombre": "Carlie",
-      "apellido": "Piell",
-      "email": "cpiell0@posterous.com"
+      "titulo": "asd",
+      "transaccion": "venta",
+      "descripcion": "asd",
+      "precio": "100000",
+      "num_puertas": "asd",
+      "num_KMS": "asd",
+      "potencia": "asd"
     },
     {
       "id": 2,
-      "nombre": "Nikki",
-      "apellido": "Knappitt",
-      "email": "nknappitt1@tuttocitta.it"
-    },
-    {
-      "id": 3,
-      "nombre": "Mercy",
-      "apellido": "Loble",
-      "email": "mloble2@goodreads.com"
-    },
-    {
-      "id": 4,
-      "nombre": "Brit",
-      "apellido": "Bonfield",
-      "email": "bbonfield3@yellowpages.com"
-    },
-    {
-      "id": 5,
-      "nombre": "Karrie",
-      "apellido": "Witcomb",
-      "email": "kwitcomb4@squidoo.com"
-    },
-    {
-      "id": 6,
-      "nombre": "Codie",
-      "apellido": "Olcot",
-      "email": "colcot5@tiny.cc"
-    },
-    {
-      "id": 7,
-      "nombre": "Barnett",
-      "apellido": "Troy",
-      "email": "btroy6@lycos.com"
-    },
-    {
-      "id": 8,
-      "nombre": "Danice",
-      "apellido": "Kayley",
-      "email": "dkayley7@nationalgeographic.com"
-    },
-    {
-      "id": 9,
-      "nombre": "Lisetta",
-      "apellido": "Badwick",
-      "email": "lbadwick8@phoca.cz"
-    },
-    {
-      "id": 10,
-      "nombre": "Pierette",
-      "apellido": "Beresford",
-      "email": "pberesford9@feedburner.com"
-    },
-    {
-      "id": 11,
-      "nombre": "Andrey",
-      "apellido": "Sandcraft",
-      "email": "asandcrafta@bandcamp.com"
-    },
-    {
-      "id": 12,
-      "nombre": "Madlen",
-      "apellido": "Coster",
-      "email": "mcosterb@independent.co.uk"
-    },
-    {
-      "id": 13,
-      "nombre": "Nicolette",
-      "apellido": "Piggrem",
-      "email": "npiggremc@businesswire.com"
-    },
-    {
-      "id": 14,
-      "nombre": "Tildy",
-      "apellido": "O'Corrane",
-      "email": "tocorraned@goo.gl"
-    },
-    {
-      "id": 15,
-      "nombre": "Alva",
-      "apellido": "Holyard",
-      "email": "aholyarde@bandcamp.com"
-    },
-    {
-      "id": 16,
-      "nombre": "Christa",
-      "apellido": "Cansfield",
-      "email": "ccansfieldf@mail.ru"
-    },
-    {
-      "id": 17,
-      "nombre": "Gustaf",
-      "apellido": "Nutbrown",
-      "email": "gnutbrowng@indiatimes.com"
-    },
-    {
-      "id": 18,
-      "nombre": "Arlen",
-      "apellido": "Tonsley",
-      "email": "atonsleyh@furl.net"
-    },
-    {
-      "id": 19,
-      "nombre": "Binky",
-      "apellido": "Huddy",
-      "email": "bhuddyi@parallels.com"
-    },
-    {
-      "id": 20,
-      "nombre": "Raychel",
-      "apellido": "Pickersgill",
-      "email": "rpickersgillj@weebly.com"
-    },
-    {
-      "nombre": "nico",
-      "apellido": "alvarez",
-      "email": "jose@nico",
-      "id": 21
+      "titulo": "asd",
+      "transaccion": "alquiler",
+      "descripcion": "asd",
+      "precio": "200000",
+      "num_puertas": "5",
+      "num_KMS": "4",
+      "potencia": "5"
     }
   ]
 }
